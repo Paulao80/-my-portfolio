@@ -18,31 +18,8 @@ body {
   background: linear-gradient(to top, rgb(255, 170, 255), rgb(76, 3, 107));
 }
 
-aside {
-  position: fixed;
-  top: 55px;
-  right: 6vw;
-  background-color: rgb(46, 46, 46);
-  float: right;
-  padding: 10px;
-  z-index: 1;
-}
-
 .hidden {
   display: none;
-}
-
-aside ul {
-  list-style: none;
-}
-
-aside ul li {
-  padding: 5px;
-}
-
-aside ul li a {
-  text-decoration: none;
-  color: white;
 }
 
 main {
@@ -284,29 +261,9 @@ footer p {
     }
   } */
 
-@media screen and (max-width: 575px) {
-  nav {
-    position: relative;
-    left: unset;
-    right: 2vw;
-    float: right;
-    transform: translateY(-50%);
-  }
-}
-
 @media screen and (max-width: 474px) {
   .cards {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 442px) {
-  .item-menu {
-    display: none;
-  }
-
-  .menu-hab {
-    display: list-item;
   }
 }
 

@@ -37,7 +37,34 @@ nav {
   font-size: 20px;
 }
 
+.menu li button {
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  border: none;
+}
+
 .menu li:hover {
   text-shadow: 0 0 10px violet, 0 0 20px violet, 0 0 40px violet,
     0 0 80px violet, 0 0 160px violet;
+}
+
+@media screen and (max-width: 593px) {
+  nav {
+    position: relative;
+    left: unset;
+    right: 2vw;
+    float: right;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (max-width: 442px) {
+  .item-menu {
+    display: none;
+  }
+
+  .menu-hab {
+    display: list-item;
+  }
 }

@@ -1,30 +1,39 @@
 import video from 'assets/videos/logo.mp4'
 import 'Components/NavBar/style.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
 
-const NavBar = () => {
+type Props = {
+    onHabClick: Function
+}
+
+const NavBar = ({ onHabClick }: Props) => {
+
     return (
         <header>
             <video src={video} autoPlay loop></video>
             <nav>
                 <ul className="menu">
                     <li className="item-menu">
-                        <a href="#portifolio">PORTIFÓLIO</a>
+                        <Link to="#portifolio">PORTIFÓLIO</Link>
                     </li>
                     <li className="item-menu">
-                        <a href="#sobre">SOBRE</a>
+                        <Link to="#sobre">SOBRE</Link>
                     </li>
                     <li className="item-menu">
-                        <a href="#contatos">CONTATO</a>
+                        <Link to="#contatos">CONTATO</Link>
                     </li>
                     <li className="menu-hab">
-                        <a href="#teste" className="icon">
-                            <i className="fa fa-bars"></i>
-                        </a>
+                        <button className="icon" onClick={() => onHabClick()}>
+                            <FontAwesomeIcon icon={faBars} />
+                        </button>
                     </li>
                 </ul>
             </nav>
         </header>
     );
+
 }
 
 export default NavBar;

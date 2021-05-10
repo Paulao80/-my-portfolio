@@ -1,0 +1,22 @@
+aside {
+  position: fixed;
+  top: 55px;
+  right: 6vw;
+  background-color: rgb(46, 46, 46);
+  float: right;
+  padding: 10px;
+  z-index: 1;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside ul li {
+  padding: 5px;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: white;
+}

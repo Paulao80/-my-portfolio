@@ -1,19 +1,26 @@
-const Aside = () => {
+import 'Components/Aside/style.css'
+import { Link } from 'react-router-dom';
+
+type Props = {
+    state: string
+}
+
+const Aside = ({ state }: Props) => {
 
     return (
-        <aside className="hidden">
+        <aside className={state} >
             <ul>
                 <li>
-                    <a href="#portifolio">PORTIFÓLIO</a>
+                    <Link to="#portifolio">PORTIFÓLIO</Link>
                 </li>
                 <li>
-                    <a href="#sobre">SOBRE</a>
+                    <Link to="#sobre">SOBRE</Link>
                 </li>
                 <li>
-                    <a href="#contatos">CONTATO</a>
+                    <Link to="#contatos">CONTATO</Link>
                 </li>
             </ul>
-        </aside>
+        </aside >
     );
 
 }
