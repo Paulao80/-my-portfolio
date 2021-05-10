@@ -1,0 +1,25 @@
+.card {
+  text-align: center;
+}
+
+.card .figuras {
+  margin-top: 35px;
+}
+
+.card .figuras img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 15px #949494;
+}
+
+.card h2 {
+  margin-top: 15px;
+  font-size: 26px;
+}
+
+.card p {
+  margin-top: 10px;
+  text-align: justify;
+  font-size: 22px;
+}
