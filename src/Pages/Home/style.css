@@ -29,37 +29,6 @@ main {
   top: 75px;
 }
 
-#top {
-  background-image: url("../../assets/images/fundo1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  width: 100%;
-  height: calc(100vh - 80px);
-  border-bottom: 5px solid black;
-  position: relative;
-}
-
-.subtitulo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 2em;
-  text-transform: uppercase;
-  text-align: center;
-  text-shadow: 0 0 5px #9a009a, 0 0 10px #9a009a, 0 0 5px #9a009a,
-    0 0 10px #9a009a, 0 0 20px #9a009a;
-}
-
-.subtitulo:hover {
-  text-shadow: 0 0 5px #b843e1, 0 0 10px #b843e1, 0 0 5px #b843e1,
-    0 0 10px #b843e1, 0 0 20px #b843e1;
-  cursor: pointer;
-}
-
 #sobre {
   position: relative;
   width: 100%;
