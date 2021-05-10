@@ -19,10 +19,10 @@ const Header = ({ onHabClick }: Props) => {
                         <Link to="#portifolio">PORTIFÓLIO</Link>
                     </li>
                     <li className="item-menu">
-                        <Link to="#sobre">SOBRE</Link>
+                        <a href="/#sobre">SOBRE</a>
                     </li>
                     <li className="item-menu">
-                        <Link to="#contatos">CONTATO</Link>
+                        <a href="/#contatos">CONTATO</a>
                     </li>
                     <li className="menu-hab">
                         <button className="icon" onClick={() => onHabClick()}>

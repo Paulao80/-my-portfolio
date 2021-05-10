@@ -57,3 +57,21 @@
 .Email a:hover {
   background-color: rgb(65, 65, 231);
 }
+
+@media screen and (max-width: 899px) {
+  .blocos {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .blocos {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 367px) {
+  .blocos {
+    width: 300px;
+  }
+}

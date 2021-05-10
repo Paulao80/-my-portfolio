@@ -13,3 +13,15 @@
   margin: auto;
   font-family: "Roboto", sans-serif;
 }
+
+@media screen and (max-width: 699px) {
+  .cards {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 474px) {
+  .cards {
+    width: 100%;
+  }
+}

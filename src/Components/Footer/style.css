@@ -1,0 +1,38 @@
+footer {
+  position: relative;
+  background-color: black;
+  color: white;
+  top: 75px;
+  width: 100vw;
+  height: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+footer h1 {
+  float: left;
+}
+
+footer p {
+  position: relative;
+  float: right;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 367px) {
+  footer p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 327px) {
+  footer h1 {
+    font-size: 18px;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+}

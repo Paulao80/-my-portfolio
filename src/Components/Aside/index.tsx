@@ -14,10 +14,10 @@ const Aside = ({ state }: Props) => {
                     <Link to="#portifolio">PORTIFÓLIO</Link>
                 </li>
                 <li>
-                    <Link to="#sobre">SOBRE</Link>
+                    <a href="/#sobre">SOBRE</a>
                 </li>
                 <li>
-                    <Link to="#contatos">CONTATO</Link>
+                    <a href="/#contatos">CONTATO</a>
                 </li>
             </ul>
         </aside >
