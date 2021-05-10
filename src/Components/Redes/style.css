@@ -1,0 +1,27 @@
+.Redes {
+  margin-top: 10px;
+}
+
+.Redes a {
+  text-decoration: none;
+  background-color: rgb(56, 56, 56);
+  color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 25%;
+  float: left;
+  margin-right: 5px;
+}
+
+.Redes a svg {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Redes span {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}

@@ -1,3 +1,4 @@
+import ContatosSection from 'Components/ContatosSection'
 import NavBar from 'Components/NavBar'
 import SobreSection from 'Components/SobreSection'
 import TopSection from 'Components/TopSection'
@@ -13,6 +14,7 @@ const Home = () => {
             <main>
                 <TopSection />
                 <SobreSection />
+                <ContatosSection />
             </main>
         </>
     );

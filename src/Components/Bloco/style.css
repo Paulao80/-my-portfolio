@@ -1,0 +1,24 @@
+.bloco {
+  position: relative;
+  background-color: rgb(233, 233, 233);
+  box-shadow: 10px 10px 20px #111;
+  width: 400px;
+  height: 342px;
+  margin-left: 15px;
+  margin-right: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+  float: left;
+}
+
+.bloco-title {
+  font-size: 26px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.bloco-body {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px;
+}

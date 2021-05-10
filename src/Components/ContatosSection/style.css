@@ -1,0 +1,59 @@
+#contatos {
+  background: linear-gradient(to top, rgb(255, 135, 255), rgb(137, 27, 184));
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.blocos {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.Redes-list {
+  list-style: none;
+}
+
+.Facebook a:hover {
+  background-color: #3b5998;
+}
+
+.Instagram a:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.Twitter a:hover {
+  background-color: #00acee;
+}
+
+.Youtube a:hover {
+  background-color: #c4302b;
+}
+
+.Github a:hover {
+  background-color: black;
+}
+
+.Whatsapp a:hover {
+  background-color: #34af23;
+}
+
+.Telefone a:hover {
+  background-color: green;
+}
+
+.Email a:hover {
+  background-color: rgb(65, 65, 231);
+}
