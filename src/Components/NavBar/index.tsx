@@ -1,39 +1,30 @@
-import video from 'assets/videos/logo.mp4'
-import 'Components/NavBar/style.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { Link } from 'react-router-dom';
+import Aside from "Components/Aside";
+import Header from "Components/Header";
+import { useState } from "react";
 
-type Props = {
-    onHabClick: Function
-}
+const NavBar = () => {
 
-const NavBar = ({ onHabClick }: Props) => {
+    const [state, setState] = useState('hidden');
+
+    const HabClick = () => {
+        if (state === 'hidden') {
+            setState('');
+        }
+        else {
+            setState('hidden')
+        }
+    }
+
+    window.onresize = () => {
+        setState('hidden');
+    }
 
     return (
-        <header>
-            <video src={video} autoPlay loop></video>
-            <nav>
-                <ul className="menu">
-                    <li className="item-menu">
-                        <Link to="#portifolio">PORTIFÓLIO</Link>
-                    </li>
-                    <li className="item-menu">
-                        <Link to="#sobre">SOBRE</Link>
-                    </li>
-                    <li className="item-menu">
-                        <Link to="#contatos">CONTATO</Link>
-                    </li>
-                    <li className="menu-hab">
-                        <button className="icon" onClick={() => onHabClick()}>
-                            <FontAwesomeIcon icon={faBars} />
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <>
+            <Header onHabClick={HabClick} />
+            <Aside state={state} />
+        </>
     );
-
 }
 
 export default NavBar;
