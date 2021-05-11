@@ -12,7 +12,7 @@ const Header = ({ onHabClick }: Props) => {
 
     return (
         <header>
-            <video src={video} autoPlay loop></video>
+            <video src={video} autoPlay muted loop></video>
             <nav>
                 <ul className="menu">
                     <li className="item-menu">
